@@ -25,6 +25,7 @@ export default function Home() {
       setOutput(result);
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
+      console.error(error);
       setOutput(`Error: ${err instanceof Error ? err.message : String(err)}`);
     }
   };
